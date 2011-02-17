@@ -29,9 +29,9 @@ Build-Type:    Simple
 
 
 
---source-repository head
---  type: git
---  location: ?
+source-repository head
+  type: git
+  location: git@gitsldg.ittc.ku.edu:th-kind-workaround/th-sccs.git
 
 Library
   Build-Depends: base >= 4 && < 5
