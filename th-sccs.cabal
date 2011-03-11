@@ -1,5 +1,5 @@
 Name:          th-sccs
-Version:       0.0.0.20110217
+Version:       0.0.0.20110310
 
 Stability:     experimental
 
@@ -36,6 +36,6 @@ source-repository head
 Library
   Build-Depends: base >= 4 && < 5
   Build-Depends: containers
-  Build-Depends: template-haskell
+  Build-Depends: template-haskell >= 2.5.0.0
 
   Exposed-Modules: Language.Haskell.TH.SCCs

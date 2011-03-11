@@ -57,7 +57,7 @@ class Named t where name_of :: t -> Name
 
 instance Named Info where
   name_of i = case i of
-    ClassI d -> name_of d
+    ClassI d _ -> name_of d
     ClassOpI n _ _ _ -> n
     TyConI d -> name_of d
     PrimTyConI n _ _ -> n
