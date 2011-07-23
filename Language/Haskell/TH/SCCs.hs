@@ -125,7 +125,7 @@ instance Dependencies Info where
     TyConI d -> td_descend ns i d
     PrimTyConI n _ _ -> Set.empty
     _ -> error $ "This version of th-sccs only calculates mutually " ++
-                 "td_recursive groups for types; " ++ show (name_of i) ++
+                 "recursive groups for types; " ++ show (name_of i) ++
                  " is not a type."
 
 instance Dependencies Dec where
@@ -134,7 +134,7 @@ instance Dependencies Dec where
     NewtypeD _ _ _ c _ -> w c
     TySynD _ _ ty -> w ty
     FamilyD {} ->
-      error $ "This version of th-sccs cannot calculate mutually td_recursive " ++
+      error $ "This version of th-sccs cannot calculate mutually recursive " ++
               "groups for types involving type families; " ++
               show (last ns) ++ " uses " ++ show (name_of d) ++ "."
     o -> error $ "Unexpected declaration: " ++ show o ++ "."
