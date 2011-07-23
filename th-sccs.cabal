@@ -1,5 +1,5 @@
 Name:          th-sccs
-Version:       0.0.0.20110310
+Version:       0.0.0.20110723
 
 Stability:     experimental
 
@@ -13,10 +13,10 @@ Description: th-sccs exposes Template Haskell functions for computing the
              constructor names that occur within a TH @Info@\/@Dec@\/@Type@
              value.
 
-Author:        nfrisby@ittc.ku.edu
-Maintainer:    nfrisby@ittc.ku.edu
+Author:        nicolas.frisby@gmail.com
+Maintainer:    nicolas.frisby@gmail.com
 
-Copyright:     (c) 2011 The University of Kansas
+Copyright:     (c) 2011 Nicolas Frisby
 License:       BSD3
 License-File:  LICENSE
 
@@ -29,9 +29,9 @@ Build-Type:    Simple
 
 
 
-source-repository head
-  type: git
-  location: git@gitsldg.ittc.ku.edu:th-kind-workaround/th-sccs.git
+--source-repository head
+--  type: git
+--  location: git@gitsldg.ittc.ku.edu:th-kind-workaround/th-sccs.git
 
 Library
   Build-Depends: base >= 4 && < 5
